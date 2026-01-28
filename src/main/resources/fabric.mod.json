@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mccourse",
+	"version": "${version}",
+	"name": "MC Course Mos",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Lucas"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mccourse/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.lucas.mccourse.MCCourseMod"
+		],
+		"fabric-datagen": [
+			"net.lucas.mccourse.MCCourseModDataGenerator"
+		],
+		"client": [
+			"net.lucas.mccourse.MCCourseModClient"
+		]
+	},
+	"mixins": [
+		"mccourse.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
