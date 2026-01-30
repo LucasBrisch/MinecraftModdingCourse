@@ -15,8 +15,21 @@ import net.minecraft.util.Identifier;
 
      public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
              new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
-     );public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
+     );
+     public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
+             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
+     );
+     public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
              new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE))
+     );
+    public static final Block NETHER_PINK_GARNET_ORE = registerBlock("nether_pink_garnet_ore",
+             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE))
+     );
+    public static final Block END_STONE_PINK_GARNET_ORE = registerBlock("end_stone_pink_garnet_ore",
+             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE))
+     );
+    public static final Block DEEPSLATE_PINK_GARNET_ORE = registerBlock("deepslate_pink_garnet_ore",
+             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE))
      );
 
      private static Block registerBlock(String name, Block block) {
