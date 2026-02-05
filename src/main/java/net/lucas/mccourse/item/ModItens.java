@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lucas.mccourse.MCCourseMod;
 import net.lucas.mccourse.block.ModBlocks;
+import net.lucas.mccourse.item.custom.MetalDetectorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -18,6 +19,10 @@ public class ModItens {
 
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet",
             new Item(new Item.Settings())
+    );
+
+    public static final Item METAL_DETECTOR = registerItem("metal_detector",
+            new MetalDetectorItem(new Item.Settings().maxDamage(256))
     );
 
     private static Item registerItem(String name, Item item) {

@@ -18,6 +18,7 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItens.PINK_GARNET)).entries((displayContext, entries) -> {
                         entries.add(ModItens.PINK_GARNET);
                         entries.add(ModItens.RAW_PINK_GARNET);
+                        entries.add(ModItens.METAL_DETECTOR);
 
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
