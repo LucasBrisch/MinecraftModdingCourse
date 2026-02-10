@@ -20,6 +20,10 @@ public class ModItens {
             new Item(new Item.Settings())
     );
 
+    public static final Item CAULIFLOWER = registerItem("cauliflower",
+            new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
+    );
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MCCourseMod.MOD_ID, name), item);
     };
