@@ -1,7 +1,6 @@
 {
   "item.mccourse.pink_garnet": "Pink Garnet",
   "item.mccourse.raw_pink_garnet": "Raw Pink Garnet",
-  "item.mccourse.metal_detector": "Metal Detector",
 
   "block.mccourse.pink_garnet_block": "Block of Pink Garnet",
   "block.mccourse.raw_pink_garnet_block": "Block of Raw Pink Garnet",
@@ -9,8 +8,10 @@
   "block.mccourse.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
   "block.mccourse.end_stone_pink_garnet_ore": "End Pink Garnet Ore",
   "block.mccourse.nether_pink_garnet_ore": "Nether Pink Garnet Ore",
+  "block.mccourse.sound_block": "Sound Block",
 
   "itemgroup.pink_garnet_group": "Pink Garnet Mod",
 
-  "item.mmcourse.metal_detector.no_valuables": "No valuables detected.",
+  "item.mmcourse.metal_detector.no_valuables": "No valuables detected."
+
 }

@@ -26,6 +26,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.NETHER_PINK_GARNET_ORE);
                         entries.add(ModBlocks.END_STONE_PINK_GARNET_ORE);
                         entries.add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
+                        entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModItens.CAULIFLOWER);
 
                     }).build());
 

@@ -3,6 +3,7 @@
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.lucas.mccourse.MCCourseMod;
+import net.lucas.mccourse.block.custom.SoundBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -30,6 +31,10 @@ import net.minecraft.util.Identifier;
      );
     public static final Block DEEPSLATE_PINK_GARNET_ORE = registerBlock("deepslate_pink_garnet_ore",
              new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE))
+     );
+
+     public static final Block SOUND_BLOCK = registerBlock("sound_block",
+             new SoundBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE))
      );
 
      private static Block registerBlock(String name, Block block) {
