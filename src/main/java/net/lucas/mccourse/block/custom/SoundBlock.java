@@ -37,6 +37,6 @@ public class SoundBlock extends Block {
             MCCourseMod.LOGGER.info("Sound block was right clicked");
         }
 
-        return super.onUse(state, world, pos, player, hit);
+        return ActionResult.SUCCESS;
     }
 }
