@@ -19,6 +19,7 @@ public class ModItemGroup {
                         entries.add(ModItens.PINK_GARNET);
                         entries.add(ModItens.RAW_PINK_GARNET);
                         entries.add(ModItens.METAL_DETECTOR);
+                        entries.add(ModItens.PEAT_BRICK);
 
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);

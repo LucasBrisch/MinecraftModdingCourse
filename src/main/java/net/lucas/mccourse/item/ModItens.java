@@ -25,6 +25,10 @@ public class ModItens {
             new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
     );
 
+    public static final Item PEAT_BRICK = registerItem("peat_brick",
+            new Item(new Item.Settings())
+    );
+
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new Item.Settings().maxDamage(256))
     );
