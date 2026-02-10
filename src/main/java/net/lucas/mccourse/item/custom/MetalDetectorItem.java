@@ -1,13 +1,20 @@
 package net.lucas.mccourse.item.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 
 public class MetalDetectorItem extends Item {
@@ -43,6 +50,16 @@ public class MetalDetectorItem extends Item {
             EquipmentSlot.MAINHAND);
 
         return ActionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+//        super.appendTooltip(stack, context, tooltip, type);
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("tooltip.mccourse.metal_detector.tooltip.shift"));
+        } else {
+            tooltip.add(Text.translatable("tooltip.mccourse.metal_detector.tooltip"));
+        }
     }
 
     private void outputValuableCoordinates(BlockPos position, PlayerEntity player, Block block) {
