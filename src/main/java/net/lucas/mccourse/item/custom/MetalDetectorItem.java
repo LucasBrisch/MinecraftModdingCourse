@@ -1,4 +1,5 @@
 package net.lucas.mccourse.item.custom;
+import net.lucas.mccourse.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.gui.screen.Screen;
@@ -67,10 +68,6 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState blockstate) {
-        return blockstate.getBlock() == net.minecraft.block.Blocks.IRON_ORE ||
-               blockstate.getBlock() == net.minecraft.block.Blocks.GOLD_ORE ||
-               blockstate.getBlock() == net.minecraft.block.Blocks.COPPER_ORE ||
-               blockstate.getBlock() == net.minecraft.block.Blocks.DIAMOND_ORE ||
-               blockstate.getBlock() == net.minecraft.block.Blocks.EMERALD_ORE;
+        return blockstate.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);
     }
 }
